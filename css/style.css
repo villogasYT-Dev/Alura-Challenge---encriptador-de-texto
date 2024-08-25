@@ -403,9 +403,6 @@ body::-webkit-scrollbar-thumb {
 
 /*Mobile*/
 @media screen and (width: 320px) {
-  * {
-    border: 1px solid red;
-  }
   .header {
     height: 40px;
     margin: 0;
