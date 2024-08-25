@@ -516,3 +516,229 @@ body::-webkit-scrollbar-thumb {
     font-size: 15px;
   }
 }
+
+@media screen and (width: 375px) {
+  .header {
+    height: 40px;
+    margin: 0;
+  }
+
+  .header > .header__logo {
+    margin-top: 1rem;
+    width: 50px;
+    height: 30px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .input-section {
+    width: 280px;
+    height: 85dvh;
+    margin: 1.2rem;
+  }
+
+  .input-section__text-area {
+    max-width: 100%;
+  }
+
+  ::placeholder {
+    font-size: var(--font-size-lg);
+  }
+
+  .input-section__buttons-container {
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .alert > img {
+    width: 15px;
+    height: 15px;
+  }
+  .alert > span {
+    font-size: var(--font-size-sm);
+  }
+
+  .input-section__buttons {
+    gap: 0.2rem;
+    width: 280px;
+  }
+
+  .btn--encrypt,
+  .btn--decrypt,
+  .btn--clear {
+    width: 320px;
+  }
+
+  .output-section {
+    margin: 2rem 0.2rem;
+    width: 330px;
+    height: 30dvh;
+  }
+
+  .output-section__message {
+    border-radius: 20px;
+    field-sizing: content;
+    resize: none;
+    height: 80%;
+    width: 100%;
+    padding: 3px;
+  }
+
+  .boneco {
+    background-image: none;
+    display: none;
+    width: 0px;
+    height: 0px;
+  }
+
+  .output-section__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.3rem;
+    width: 50%;
+    height: 30%;
+  }
+
+  .btn--copy {
+    width: 85%;
+    margin-right: 3rem;
+    height: 90px;
+  }
+
+  .message1 {
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .message2 {
+    text-align: center;
+    font-size: var(--font-size-sm);
+    width: 73%;
+    margin-top: 0.5rem;
+  }
+
+  .footer__author {
+    font-size: 15px;
+  }
+}
+
+@media screen and (width: 425px) {
+  .header {
+    height: 40px;
+    margin: 0;
+  }
+
+  .header > .header__logo {
+    margin-top: 1rem;
+    width: 50px;
+    height: 30px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .input-section {
+    width: 320px;
+    height: 85dvh;
+    margin: 1.2rem;
+  }
+
+  .input-section__text-area {
+    max-width: 100%;
+  }
+
+  ::placeholder {
+    font-size: var(--font-size-lg);
+  }
+
+  .input-section__buttons-container {
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .alert > img {
+    width: 15px;
+    height: 15px;
+  }
+  .alert > span {
+    font-size: var(--font-size-sm);
+  }
+
+  .input-section__buttons {
+    gap: 0.2rem;
+    width: 320px;
+  }
+
+  .btn--encrypt,
+  .btn--decrypt,
+  .btn--clear {
+    width: 320px;
+  }
+
+  .output-section {
+    margin: 2rem 0.2rem;
+    width: 380px;
+    height: 30dvh;
+  }
+
+  .output-section__message {
+    border-radius: 20px;
+    field-sizing: content;
+    resize: none;
+    height: 80%;
+    width: 100%;
+    padding: 3px;
+  }
+
+  .boneco {
+    background-image: none;
+    display: none;
+    width: 0px;
+    height: 0px;
+  }
+
+  .output-section__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.3rem;
+    width: 50%;
+    height: 30%;
+  }
+
+  .btn--copy {
+    width: 100%;
+    margin-right: 6rem;
+    height: 90px;
+  }
+
+  .message1 {
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .message2 {
+    text-align: center;
+    font-size: var(--font-size-sm);
+    width: 73%;
+    margin-top: 0.5rem;
+  }
+
+  .footer__author {
+    font-size: 15px;
+  }
+}
