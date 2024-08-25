@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Aplicación web para encriptar y desencriptar texto, creada con las mejores prácticas de desarrollo frontend."
+    />
+    <meta
+      name="keywords"
+      content="encriptar texto, desencriptar, aplicación web, HTML, CSS, JavaScript"
+    />
+    <title>Encriptador de Texto</title>
+    <link rel="icon" href="images/alura-logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.12.4/sweetalert2.css"
+      integrity="sha512-Gebe6n4xsNr0dWAiRsMbjWOYe1PPVar2zBKIyeUQKPeafXZ61sjU2XCW66JxIPbDdEH3oQspEoWX8PQRhaKyBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Sección de encabezado-->
+    <header class="header">
+      <img
+        src="images/alura-logo.png"
+        alt="Logo de Alura"
+        class="header__logo"
+      />
+    </header>
+
+    <!--Sección principal-->
+    <main class="main-content">
+      <!--Sección de entrada de texto-->
+      <form class="input-section">
+        <!--Area de entrada de texto-->
+        <textarea
+          name="text-area"
+          id="text-area"
+          cols="30"
+          rows="10"
+          class="input-section__text-area"
+          placeholder="Ingrese el texto aquí"
+          aria-label="Área de texto para ingresar el mensaje a encriptar"
+        ></textarea>
+
+        <!--Area de botones de acción--->
+        <div class="input-section__buttons-container">
+          <!--Alerta de alert-->
+          <div class="alert">
+            <img src="images/alert.png" alt="alert" />
+            <span>Solo letras minúsculas y sin acentos</span>
+          </div>
+
+          <!--Sección de botones-->
+          <div class="input-section__buttons">
+            <!--Botón para encriptar-->
+            <button
+              class="btn btn--encrypt"
+              type="button"
+              onclick="btnEncrypt()"
+            >
+              Encriptar
+            </button>
+
+            <!--Botón para desencriptar-->
+            <button
+              class="btn btn--decrypt"
+              type="button"
+              onclick="btnDecrypt()"
+            >
+              Desencriptar
+            </button>
+
+            <!--Botón para reinicar la aplicación-->
+            <button class="btn btn--clear" type="button" onclick="btnClear()">
+              Limpiar
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <!--Mensaje de salida-->
+      <aside class="output-section">
+        <!--Area de salida de texto-->
+        <div class="boneco"></div>
+        <textarea
+          name="message"
+          id="message"
+          cols="20"
+          rows="10"
+          class="output-section__message"
+          aria-label="Área de texto para mostrar el mensaje encriptado"
+          readonly
+        ></textarea>
+        <h3 class="message1">Ningún mensaje fue encontrado</h3>
+        <p class="message2">
+          Ingresa el texto que desees encriptar o desencriptar
+        </p>
+
+        <!--Botón para copiar el texto encriptado-->
+        <div class="output-section__buttons">
+          <button class="btn btn--copy" type="button" onclick="btnCopy()">
+            Copiar
+          </button>
+        </div>
+      </aside>
+    </main>
+
+    <!--Sección de footer-->
+    <footer class="footer">
+      <p class="footer__author">
+        Creado por
+        <a href="https://github.com/villogasYT-Dev">villogasYT-Dev</a>
+      </p>
+    </footer>
+
+    <!--Script para la aplicación web-->
+    <script src="js/app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.js"
+      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.12.4/sweetalert2.all.js"
+      integrity="sha512-7CwElIdU6YF7ExXbTE9Z4xGnaKwLdQTdaMaonRG3XRhcIqTTg9K/eEiNInwBs7UgmY6o5MA2PLEzcwf1rRWKRQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
